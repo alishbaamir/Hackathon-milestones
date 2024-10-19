@@ -1,0 +1,180 @@
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 50px;
+}
+
+.resume-container {
+  display: flex;
+  background-color: rgb(217, 231, 240);
+  width: 72%;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap; 
+}
+
+
+.left-section {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 35%;
+  text-align: center;
+
+  box-sizing: border-box;
+}
+.right-section {
+  padding: 20px;
+  width: 65%;
+  box-sizing: border-box;
+}
+
+#right-section,
+h4 {
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 10% auto 20px;
+}
+
+#objective h3 {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+}
+#certification h3 {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+}
+
+#personal-info b {
+  margin-left: 10px;
+}
+
+h1 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+
+  margin: 10px 0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+h3 {
+  font-size: 18px;
+  padding: 2%;
+  margin: 20px 0 10px;
+  color: rgb(10, 57, 95);
+  background-color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#interests h3 {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+  margin-top: 40px;
+}
+.icon-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 25px; 
+  justify-content: space-evenly; 
+  margin-top: 30px;
+}
+
+.icon-item img {
+  width: 50px;
+  height: 50px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+
+button {
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  margin-top: 25px;
+  padding: 10px 5px;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(15, 44, 69);
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .resume-container {
+    flex-direction: column; 
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%; 
+    border-right: none;
+  }
+
+  .profile-picture {
+    width: 120px; 
+    height: 120px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-container {
+    padding: 10px;
+    width: 95%; 
+  }
+
+  body {
+    padding: 10px; 
+  }
+
+  .profile-picture {
+    width: 100px; 
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
